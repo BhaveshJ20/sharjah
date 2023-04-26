@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>State - Home</title>
+  <meta name="title" content="Wonderland Sharjah">
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#8d6746">
+  <meta name="msapplication-TileImage" content="assets/images/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#8d6746">
+
+  <!-- PRELOAD IMAGE -->
+  <link rel="preload" as="image" href="https://front-end.deployme.co.za/sharjah-html/src/assets/images/logo.svg">
+  <link rel="preload" as="image" href="https://front-end.deployme.co.za/sharjah-html/src/assets/images/logo-mobile.svg">
+  <link rel="preload" as="image" href="https://front-end.deployme.co.za/sharjah-html/src/assets/images/banner.jpg">
+
+  <link rel="preload" href="assets/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="assets/css/fonts.css"></noscript>
+  <!-- <link rel="stylesheet" href="assets/css/fonts.css" defer /> -->
+
+  <!-- IF BROWSER DOESN'T SUPPORT JAVASCRIPT THEN USE NORMAL LINK TAGS TO LOAD CSS -->
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"/>
+  </noscript>
+
+  <!-- LOAD CSS -->
+  <script type="text/javascript">
+  //<![CDATA[
+  function lazycss(url) {
+    var css = document.createElement("link");
+    css.href = url;
+    css.rel = "stylesheet";
+    css.type = "text/css";
+    document.getElementsByTagName("head")[0].appendChild(css);
+  }
+
+  lazycss("https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css");
+  lazycss("https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"); //]]>
+
+</script> 
+<!-- STYLE -->
+<!-- <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" defer /> -->
+<!-- <link rel="stylesheet" href="assets/vendors/swiper/css/swiper-bundle.min.css" defer /> -->
+<!-- <link rel="preload" type="text/css" href="css/fonts.css" as="style" onload="this.rel = 'stylesheet'"/> -->
+
+<link rel="stylesheet" href="assets/css/icons.css" defer />
+<link rel="stylesheet" href="assets/css/common.css" defer />
+<link rel="stylesheet" href="assets/css/pages/home.css" defer />  
+</head>
+<body>
+  <!-- LOADER -->
+  <!-- <div class="loader-wrap">
+    <div class="dot-flashing"></div>
+  </div> -->
+
+  <!-- HEADER -->
+  <header class="header header-light">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler d-flex" type="button" aria-label="Toogle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav navbar-nav-menu me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistics.html">statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community-development.html">community development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tahdeeth.html">tahdeeth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav navbar-nav-lang ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index-ar.html">AR</a>
+          </li>
+        </ul>
+
+        <a class="navbar-brand" href="index.html">
+          <img data-src="assets/images/logo.svg" width="288" height="74" class="img-fluid lazyload d-none d-lg-block" alt="Stats" />
+          <img data-src="assets/images/logo-mobile.svg" width="89" height="45" class="img-fluid lazyload d-lg-none d-block" alt="Stats" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER OVERLAY -->
+  <div class="header-overlay" id="mobileMenu" style="background-image: url('assets/images/overlay-menu.png');">
+    <div class="header-overlay-wrap">
+      <span class="header-overlay-close">
+        <i class="icon icon-close text-dark"></i>
+      </span>
+
+      <div class="row">
+        <ul class="col-lg-6 list-unstyled header-level-one">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="statistics.html">Statistics</a>
+          </li>
+          <li>
+            <a href="community-development.html">Community Development</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="training.html">Training Center</a>
+          </li>
+        </ul>
+
+        <ul class="col-lg-6 list-unstyled header-level-one">
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+          <li class="header-level-submenu">
+            <a href="media-center.html">Media Center 
+              <i class="icon icon-chev-lg-right d-lg-none"></i>
+            </a>
+
+            <ul class="list-unstyled header-level-two">
+              <li class="header-menu-back d-lg-none">
+                <a href="javascript:void(0);">
+                  <i class="icon icon-chev-lg-left"></i> back
+                </a>
+              </li>
+              <li>
+                <a href="news.html">News</a>
+              </li>
+              <li>
+                <a href="media-publication.html">Publications</a>
+              </li>
+              <li>
+                <a href="media-kit.html">Media Kit</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row d-lg-flex d-none">
+        <div class="col-lg-6">
+          <div class="header-overlay-info">
+            <a href="mailto:info@dscd.ae">info@dscd.ae</a>
+            <a href="tel:97000000000">+97 000 000 000</a>
+          </div>
+
+          <div class="header-overlay-social">
+            <a href="#" target="_blank"><i class="icon icon-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-facebook"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-youtube"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="header-overlay-subscription">
+            <h3 class="">Subscribe Now</h3>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-secondary" type="button" aria-label="Subscribe Now"><i class="icon icon-chev-lg-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO BANNER -->
+  <div class="section-hero">
+    <div class="swiper-container hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="container-fluid px-0 hero-image" style="background-image: url('assets/images/banner.jpg');">
+            <div class="row g-0 h-100">
+              <div class="col-lg-6 h-100 mx-auto">
+                <div class="hero-content">
+                  <div class="section-title">
+                    <h2 class="title-lg text-white">Lorem Ipsum Dolor Sit <br/>Amet Consecte</h2>
+                  </div>
+
+                  <a href="#" class="btn btn-lg btn-primary">View statistics</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-slide">
+          <div class="container-fluid px-0 hero-video">
+            <div class="row g-0 h-100">
+              <div class="col-lg-12 h-100">
+                <div class="hero-content">
+                  <div class="ratio ratio-16x9 h-100">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/yAoLSRbwxL8?rel=0&controls=0&enablejsapi=1&loop=1&modestbranding=1&iv_load_policy=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next">
+        <i class="icon icon-chev-lg-right"></i>
+      </div>
+      <div class="swiper-button-prev">
+        <i class="icon icon-chev-lg-left"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- INforgraphic Section -->
+  <div class="section-infographic">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="swiper-container infographic-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="infographic-content">
+                  <div class="infographic-icon">
+                    <i class="icon icon-baby-toy"></i>
+                  </div>
+                  <div class="infographic-text">
+                    <p>Total Live Births 2017</p>
+                    <h6>9,774</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="infographic-content">
+                  <div class="infographic-icon">
+                    <i class="icon icon-doctor"></i>
+                  </div>
+                  <div class="infographic-text">
+                    <p>Healthcare Centers 2017</p>
+                    <h6>22</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="infographic-content">
+                  <div class="infographic-icon">
+                    <i class="icon icon-drive"></i>
+                  </div>
+                  <div class="infographic-text">
+                    <p>Traffic Accidents 2017</p>
+                    <h6>514</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="infographic-content">
+                  <div class="infographic-icon">
+                    <i class="icon icon-drop"></i>
+                  </div>
+                  <div class="infographic-text">
+                    <p>Water Consumers 2017</p>
+                    <h6>348,044</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="infographic-content">
+                  <div class="infographic-icon">
+                    <i class="icon icon-drive"></i>
+                  </div>
+                  <div class="infographic-text">
+                    <p>Traffic Accidents 2017</p>
+                    <h6>514</h6>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="infographic-content">
+                  <div class="infographic-icon">
+                    <i class="icon icon-drop"></i>
+                  </div>
+                  <div class="infographic-text">
+                    <p>Water Consumers 2017</p>
+                    <h6>348,044</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add Arrows -->
+          <div class="swiper-button-next">
+            <i class="icon icon-chev-lg-right"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="icon icon-chev-lg-left"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION ABOUT -->
+  <div class="section-about" style="background-image: url('assets/images/bg-about.png');">
+    <div class="container px-xl-0">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-title mb-lg-5">            
+            <p class="small text-lighter mb-1">About</p>
+
+            <h1 class="title-md text-primary">Lorem Ipsum Dolor Sit Amet Consecte</h1>
+          </div>
+
+          <div class="d-lg-block d-none">
+            <a href="#" class="small fw-bolder text-secondary d-inline-flex align-items-center">Read more <i class="icon icon-chev-lg-right ms-2"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="title-desc mt-4">
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+
+            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+          </div>
+
+          <div class="d-lg-none">
+            <a href="#" class="small fw-bolder text-secondary d-inline-flex align-items-center">Read more 
+              <i class="icon icon-chev-lg-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3"></div>
+
+        <div class="col">
+          <div class="about-image">
+            <img data-src="assets/images/banner-about.jpg" width="353" height="529" class="img-fluid lazyload" alt="Statistics" />
+          </div>
+        </div>
+
+        <div class="col-lg-4 align-self-end me-xl-5 me-lg-4">
+          <div class="section-title mb-lg-5 mb-4">            
+            <p class="small text-lighter mb-1">Statistics</p>
+
+            <h2 class="title-md text-primary">Lorem Ipsum Dolor Sit Amet Consecte</h2>
+          </div>
+
+          <ul class="about-list list-unstyled">
+            <li>
+              <a href="#" class="stretched-link">Population & Social Statistics</a>
+              <i class="icon icon-chev-lg-right"></i>
+            </li>
+
+            <li>
+              <a href="#" class="stretched-link">Economic Statistics</a>
+              <i class="icon icon-chev-lg-right"></i>
+            </li>
+
+            <li>
+              <a href="#" class="stretched-link">Environment, Energy & Infrastrucuture</a>
+              <i class="icon icon-chev-lg-right"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-about-image d-lg-block d-none" style="background-image: url('assets/images/bg-about2.png');"></div>
+  </div>
+
+  <!-- SECTION SERVICE -->
+  <div class="section-service bg-secondary-50" style="background-image: url('assets/images/bg-service.png');">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-title mb-lg-5">            
+            <p class="small text-dark mb-1">Services</p>
+
+            <h2 class="title-md text-dark">Lorem Ipsum Dolor Sit Amet Consecte</h2>
+          </div>
+
+          <div class="d-lg-block d-none">
+            <a href="#" class="small fw-bolder text-white d-inline-flex align-items-center">View All 
+              <i class="icon icon-chev-lg-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="row mt-4">
+            <div class="col-lg-6 col-md-6">
+              <div class="service-list">
+                <div class="section-title mb-lg-3 mb-2">
+                  <h3 class="lead fw-bolder text-dark">Statistical Data Request</h3>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <div class="service-list">
+                <div class="section-title mb-lg-3 mb-2">
+                  <h3 class="lead fw-bolder text-dark">Statistical Survey Request</h3>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <div class="service-list">
+                <div class="section-title mb-lg-3 mb-2">
+                  <h3 class="lead fw-bolder text-dark">Opinion Poll Request</h3>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <div class="service-list">
+                <div class="section-title mb-lg-3 mb-2">
+                  <h3 class="lead fw-bolder text-dark">Statistical Consultancy</h3>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-lg-none">
+            <a href="#" class="small fw-bolder text-white d-inline-flex align-items-center">View All 
+              <i class="icon icon-chev-lg-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION LATEST POST -->
+  <div class="section-latest-post">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title text-lg-center mb-lg-5 mb-md-3 mb-4 px-2 mx-1">
+            <p class="small text-lighter mb-1">News</p>
+
+            <h3 class="title-md text-primary">Our Latest Posts</h3>
+
+            <div class="d-lg-block d-none">
+              <a href="#" class="small fw-bolder text-secondary d-inline-flex align-items-center">View All
+                <i class="icon icon-chev-lg-right ms-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center g-lg-5 g-0">
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-post-card">
+            <div class="latest-post-card-image">
+              <img data-src="assets/images/post1.jpg" class="img-fluid lazyload" alt="">
+            </div>
+
+            <div class="latest-post-card-content">
+              <h4 class="lead fw-bolder">Lorem Ipsum Dolor Sit Amet Consecte</h4>
+
+              <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+
+              <a href="#" class="text-secondary stretched-link">
+                <i class="icon icon-chev-lg-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-post-card">
+            <div class="latest-post-card-image">
+              <img data-src="assets/images/post2.jpg" class="img-fluid lazyload" alt="">
+            </div>
+
+            <div class="latest-post-card-content">
+              <h4 class="lead fw-bolder">Lorem Ipsum Dolor Sit Amet Consecte</h4>
+
+              <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+
+              <a href="#" class="text-secondary stretched-link">
+                <i class="icon icon-chev-lg-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="latest-post-card">
+            <div class="latest-post-card-image">
+              <img data-src="assets/images/post3.jpg" class="img-fluid lazyload" alt="">
+            </div>
+
+            <div class="latest-post-card-content">
+              <h4 class="lead fw-bolder">Lorem Ipsum Dolor Sit Amet Consecte</h4>
+
+              <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+
+              <a href="#" class="text-secondary stretched-link">
+                <i class="icon icon-chev-lg-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-latest-post-image d-lg-block d-none" style="background-image: url('assets/images/bg-post.png');"></div>
+  </div>
+
+  <!-- CTA SECTION -->
+  <div class="cta-bottom" style="background-image: url('assets/images/cta-bg.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <div class="row align-items-center">
+            <div class="col-lg-9">
+              <div class="section-title text-lg-start text-center mb-lg-0 mb-4">
+                <h4 class="title-xs text-dark">
+                  Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor 
+                </h4>
+              </div>
+            </div>
+            <div class="col-lg-3 text-lg-end text-center">
+              <button class="btn btn-secondary" aria-label="View All">View All</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="subscription">
+              <h3 class="lead text-primary fw-bold mb-3">Subscribe Now</h3>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-email">
+                <button class="btn btn-primary" type="button" id="button-email"><i class="icon icon-chev-lg-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-9 desktop-footerlinks d-md-block d-none">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="community-development.html">Community Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="training.html">Training Centre</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="news.html">News</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="media-publication.html">Publications</a></li>
+                        <li><a href="media-kit.html">Media Kit</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9 mobile-footerlinks d-md-none d-block">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="community-development.html">Community Development</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="training.html">Training Centre</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="media-publication.html">Publications</a></li>
+                        <li><a href="media-kit.html">Media Kit</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="contact-info">
+                  <div class="text-sm-start text-center mb-2"><a href="mailto:info@dscd.ae" class="text-secondary">info@dscd.ae</a></div>
+                  <div class="text-sm-start text-center mb-2"><a href="tel:+97000000000" class="text-dark">+97 000 000 000</a></div>
+                </div>
+                <div class="social-media text-sm-start text-center mt-4">
+                  <ul>
+                    <li><a href="#" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-4 col-sm-5 order-sm-1 ms-auto">
+            <div class="bottom-link d-flex justify-content-lg-end justify-content-center">
+              <ul>
+                <li>
+                  <a href="faq.html" class="fst-normal">FAQ.</a>
+                </li>
+                <li>
+                  <a href="#" class="fst-normal">Terms of use.</a>
+                </li>
+                <li>
+                  <a href="#" class="fst-normal">Privacy.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-7 order-sm-12">
+            <div class="copywright fst-normal d-flex justify-content-lg-start justify-content-center">
+              <span>Statistics Copyright 2019.</span> All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- SCRIPT -->
+  <script src="assets/vendors/jquery/jquery.min.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/vendors/jquery.nicescroll-master/js/jquery.nicescroll.min.js" defer></script>
+  <script src="assets/vendors/swiper/js/swiper-bundle.min.js"></script>
+  <script src="assets/vendors/lazysizes/lazysizes.min.js"></script>
+  <script src="assets/js/scripts.js" defer></script>
+  <script type="text/javascript">
+    /* SWIPER SLIDER */
+    if($(".swiper-container").length > 0) {
+      /* HERO SLIDER */
+      var heroSwiper = new Swiper('.hero-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: '.hero-swiper .swiper-button-next',
+          prevEl: '.hero-swiper .swiper-button-prev',
+        },
+      });
+
+      /* STATISTICS SLIDER */
+      var infographicSwiper = new Swiper('.infographic-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        navigation: {
+          nextEl: '.infographic-swiper ~ .swiper-button-next',
+          prevEl: '.infographic-swiper ~ .swiper-button-prev',
+        },
+        breakpoints: {
+          576: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1274: {
+            slidesPerView: 4,
+          },
+        }
+      });
+    }
+  </script>
+</body>
+</html>

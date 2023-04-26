@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html class="rtl" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>State - Gallery</title>
+  <meta name="title" content="Wonderland Sharjah">
+  <meta name="description" content="">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#8d6746">
+  <meta name="msapplication-TileImage" content="assets/images/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#8d6746">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendors/lightgallery/css/lightgallery.css" />
+  <link rel="stylesheet" href="assets/css/rtl.css" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/icons.css" />
+  <link rel="stylesheet" href="assets/css/common.css" />
+  <link rel="stylesheet" href="assets/css/pages/gallery.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header header-dark">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler d-flex" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav navbar-nav-menu me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="about-ar.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistics-ar.html">statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community-development-ar.html">community development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tahdeeth-ar.html">tahdeeth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-ar.html">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav navbar-nav-lang ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="gallery-ar.html">AR</a>
+          </li>
+        </ul>
+
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo-dark.svg" class="img-fluid d-none d-lg-block" alt="Stats" />
+          <img src="assets/images/logo-mobile.svg" class="img-fluid d-lg-none d-block" alt="Stats" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER OVERLAY -->
+  <div class="header-overlay" id="mobileMenu">
+    <div class="header-overlay-wrap">
+      <span class="header-overlay-close">
+        <i class="icon icon-close text-dark"></i>
+      </span>
+
+      <div class="row">
+        <ul class="col-lg-6 list-unstyled header-level-one">
+          <li>
+            <a href="index-ar.html">Home</a>
+          </li>
+          <li>
+            <a href="about-ar.html">About</a>
+          </li>
+          <li>
+            <a href="statistics-ar.html">Statistics</a>
+          </li>
+          <li>
+            <a href="community-development-ar.html">Community Development</a>
+          </li>
+          <li>
+            <a href="services-ar.html">Services</a>
+          </li>
+          <li>
+            <a href="training-ar.html">Training Center</a>
+          </li>
+        </ul>
+
+        <ul class="col-lg-6 list-unstyled header-level-one">
+          <li>
+            <a href="careers-ar.html">Careers</a>
+          </li>
+          <li class="header-level-submenu">
+            <a href="media-center-ar.html">Media Center 
+              <i class="icon icon-chev-lg-right d-lg-none"></i>
+            </a>
+
+            <ul class="list-unstyled header-level-two">
+              <li class="header-menu-back d-lg-none">
+                <a href="javascript:void(0);">
+                  <i class="icon icon-chev-lg-left"></i> back
+                </a>
+              </li>
+              <li>
+                <a href="news-ar.html">News</a>
+              </li>
+              <li>
+                <a href="media-publication-ar.html">Publications</a>
+              </li>
+              <li>
+                <a href="media-kit-ar.html">Media Kit</a>
+              </li>
+              <li>
+                <a href="gallery-ar.html">Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact-ar.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row d-lg-flex d-none">
+        <div class="col-lg-6">
+          <div class="header-overlay-info">
+            <a href="mailto:info@dscd.ae">info@dscd.ae</a>
+            <a href="tel:97000000000">+97 000 000 000</a>
+          </div>
+
+          <div class="header-overlay-social">
+            <a href="#" target="_blank"><i class="icon icon-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-facebook"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-youtube"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="header-overlay-subscription">
+            <h3 class="">Subscribe Now</h3>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-secondary" type="button"><i class="icon icon-chev-lg-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="inner-container">
+    <!-- Gallery SEction -->
+    <div class="section-gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <small class="small text-lighter">Resource</small>
+              <h1 class="title-md text-primary">Gallery</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="gallery-button">
+              <button type="button" class="btn btn-gallery is-checked" data-filter="*">All</button>
+              <button type="button" class="btn btn-gallery" data-filter=".event">Events</button>
+              <button type="button" class="btn btn-gallery" data-filter=".category1">Category</button>
+              <button type="button" class="btn btn-gallery" data-filter=".category2">Category</button>
+              <button type="button" class="btn btn-gallery" data-filter=".category3">Category</button>
+            </div>
+
+            <div class="gallery-list row">
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link event" href="https://www.youtube.com/watch?v=yAoLSRbwxL8">
+                <div class="gallery-item">
+                  <i class="icon icon-play"></i>
+                  <img src="assets/images/gallery01.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category1" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery02.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link event" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery03.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category2" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery04.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category1" href="https://www.youtube.com/watch?v=yAoLSRbwxL8">
+                <div class="gallery-item">
+                  <i class="icon icon-play"></i>
+                  <img src="assets/images/gallery05.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category2" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery06.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link event" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery07.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category3" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery08.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category1" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery09.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category3" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery10.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category2" href="https://www.youtube.com/watch?v=yAoLSRbwxL8">
+                <div class="gallery-item">
+                  <i class="icon icon-play"></i>
+                  <img src="assets/images/gallery11.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+
+              <a class="col-lg-4 col-md-6 col-sm-6 col-12 gallery-link category3" href="http://unsplash.com/photos/GYNxcQvBNzA/download">
+                <div class="gallery-item">
+                  <img src="assets/images/gallery12.png" class="img-fluid" alt="" />
+                </div>
+              </a>
+            </div>
+
+            <div class="gallery-load text-center">
+              <a href="#" class="btn btn-lg btn-outline-primary">Load more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-bottom" style="background-image: url('assets/images/cta-bg.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+          <div class="row align-items-center">
+            <div class="col-lg-9">
+              <div class="section-title text-lg-start text-center mb-lg-0 mb-4">
+                <h4 class="title-xs text-dark">
+                  Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit Sed Do Eiusmod Tempor 
+                </h4>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="d-flex justify-content-lg-end justify-content-center">
+                <button class="btn btn-secondary">View All</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="subscription">
+              <h3 class="lead text-primary fw-bold mb-3">Subscribe Now</h3>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-email">
+                <button class="btn btn-primary" type="button" id="button-email"><i class="icon icon-chev-lg-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-9 desktop-footerlinks d-md-block d-none">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="index-ar.html">Home</a></li>
+                        <li><a href="about-ar.html">About</a></li>
+                        <li><a href="statistics-ar.html">Statistics</a></li>
+                        <li><a href="community-development-ar.html">Community Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="services-ar.html">Services</a></li>
+                        <li><a href="training-ar.html">Training Centre</a></li>
+                        <li><a href="careers-ar.html">Careers</a></li>
+                        <li><a href="news-ar.html">News</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="media-publication-ar.html">Publications</a></li>
+                        <li><a href="media-kit-ar.html">Media Kit</a></li>
+                        <li><a href="gallery-ar.html">Gallery</a></li>
+                        <li><a href="contact-ar.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9 mobile-footerlinks d-md-none d-block">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="index-ar.html">Home</a></li>
+                        <li><a href="about-ar.html">About</a></li>
+                        <li><a href="statistics-ar.html">Statistics</a></li>
+                        <li><a href="community-development-ar.html">Community Development</a></li>
+                        <li><a href="services-ar.html">Services</a></li>
+                        <li><a href="training-ar.html">Training Centre</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="careers-ar.html">Careers</a></li>
+                        <li><a href="news-ar.html">News</a></li>
+                        <li><a href="media-publication-ar.html">Publications</a></li>
+                        <li><a href="media-kit-ar.html">Media Kit</a></li>
+                        <li><a href="gallery-ar.html">Gallery</a></li>
+                        <li><a href="contact-ar.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="contact-info">
+                  <div class="text-sm-start text-center mb-2"><a href="mailto:info@dscd.ae" class="text-secondary">info@dscd.ae</a></div>
+                  <div class="text-sm-start text-center mb-2"><a href="tel:+97000000000" class="text-dark">+97 000 000 000</a></div>
+                </div>
+                <div class="social-media text-sm-start text-center mt-4">
+                  <ul>
+                    <li><a href="#" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-4 col-sm-5 order-sm-1 ms-auto">
+            <div class="bottom-link d-flex justify-content-lg-end justify-content-center">
+              <ul>
+                <li>
+                  <a href="faq-ar.html" class="fst-normal">FAQ.</a>
+                </li>
+                <li>
+                  <a href="#" class="fst-normal">Terms of use.</a>
+                </li>
+                <li>
+                  <a href="#" class="fst-normal">Privacy.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-7 order-sm-12">
+            <div class="copywright fst-normal d-flex justify-content-lg-start justify-content-center">
+              <span>Statistics Copyright 2019.</span> All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendors/jquery/jquery.min.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/jquery.nicescroll-master/js/jquery.nicescroll.min.js"></script>
+  <script src="assets/vendors/lightgallery/js/lightgallery.min.js"></script>
+  <script src="assets/vendors/lightgallery/js/lg-thumbnail.js"></script>
+  <script src="assets/vendors/lightgallery/js/lg-video.js"></script>
+  <script src="assets/vendors/isotope/js/isotope.pkgd.min.js"></script>
+  <script src="assets/vendors/isotope/js/imagesloaded.pkgd.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var $gallery = $('.gallery-list');
+      var $boxes = $('.gallery-link');
+      $boxes.hide(); 
+
+      $gallery.imagesLoaded( {background: true}, function() {
+        $boxes.fadeIn();
+
+        $gallery.isotope({
+          sortBy : 'original-order',
+          layoutMode: 'fitRows',
+          itemSelector: '.gallery-link',
+          stagger: 30,
+        });
+      }); 
+
+      $('.btn-gallery').on( 'click', function() {
+        var filterValue = $(this).attr('data-filter');
+        $('.gallery-list').isotope({ filter: filterValue });
+        // $gallery.data('lightGallery').destroy(true);
+        // $gallery.lightGallery({
+        //   selector: filterValue.replace('*','')
+        // });
+        $('.btn-gallery').removeClass('is-checked');
+        $(this).addClass('is-checked');
+      });
+    });
+
+    lightGallery($('.gallery-list')[0], {
+      thumbnail: true,
+      youtubePlayerParams: {
+        modestbranding: 1,
+        showinfo: 0,
+        rel: 0,
+        controls: 0
+      },
+      loadYoutubeThumbnail: true,
+      youtubeThumbSize: 'default',
+    });
+  </script>
+</body>
+</html>

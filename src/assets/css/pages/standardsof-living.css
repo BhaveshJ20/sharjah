@@ -1,0 +1,45 @@
+.inner-container{
+	padding-top: 205px;
+}
+.fs-12{
+	font-size: 12px;
+}
+.standards-of-living-section .section-title h4.title-xs{
+	line-height: 24px;
+}
+.standards-of-living-section{
+	padding: 100px 0 16px;
+}
+.festival-card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-clip: border-box;
+}
+.festival-card-img-overlay{
+	position: absolute;
+	top: auto;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+/*START MEDIA*/
+@media screen and (max-width: 991px) {
+	.inner-container{
+		padding-top: 35px;
+	}
+	.standards-of-living-section{
+		padding: 40px 0;
+	}
+	.standards-of-living-section .img-fluid{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.standards-of-living-section{
+		padding: 40px 0 0;
+	}
+}

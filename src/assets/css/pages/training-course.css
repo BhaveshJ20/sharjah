@@ -1,0 +1,183 @@
+.inner-container{
+	padding-top: 235px;
+}
+
+/* APPLICATION STEPS */
+.section-application-steps{
+	padding: 50px 0px;
+}
+
+.application-steps-cont{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin: 0 0 15px 0;
+}
+
+.application-steps-num{
+	margin-right: 30px;
+}
+
+.application-steps-num span{
+	width: 58px;
+	height: 58px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	border-radius: 100%;
+	border: 1px solid #e8c3a4;
+	color: #e8c3a4;
+}
+
+.application-steps-text p{
+	font-size: 18px;
+	font-weight: 900;
+	letter-spacing: 0.17px;
+}
+
+.section-desc-requ{
+	padding: 90px 0px;
+}
+
+.services-list .services-icon{
+	margin-right: 40px;
+}
+
+.services-list .services-icon .icon{
+	width: 63px;
+	height: 63px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto;
+	border-radius: 100%;
+	font-size: 32px;
+}
+
+.services-list .services-icon .icon-money{
+	font-size: 23px;
+}
+
+.services-list .sevices-desc{
+	margin-top: 20px;
+}
+
+.services-list .sevices-desc .section-title{
+	margin-bottom: 34px;
+}
+
+.services-list .services-text {
+	color: #4a4a4a;	
+}
+
+.services-list .services-text p{
+	margin-bottom: 40px;
+}
+
+.list-sm{
+	padding-left: 18px;
+	margin-bottom: 40px;
+}
+
+.services-term-cond .list-sm li{
+	padding-left: 25px;
+}
+
+.section-service-request{
+	padding: 100px 0 80px;
+}
+
+.custom-file {
+	position: relative;
+	cursor: pointer;
+}
+
+.custom-file .icon {
+	font-size: 10px;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+.custom-file .custom-control {
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.day:not(.active) {
+	pointer-events: none;
+}
+
+.training-course-apply-btn{
+	text-align: right;
+}
+
+/* MEDIA CSS */
+
+@media screen and (max-width: 991px) {
+	.inner-container{
+		padding-top: 35px;
+	}
+
+	.section-application-steps{
+		padding: 50px 0px 0px;
+	}
+
+	.section-desc-requ{
+		padding: 40px 0px;
+	}
+
+	.section-service-request {
+		padding: 40px 0;
+	}
+
+	.training-course-apply-btn{
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.application-steps-num{
+		margin-right: 20px;
+	}
+	.services-list .services-icon{
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.training-course-apply-btn{
+		text-align: center;
+	}
+}
+
+/* RTL */
+
+.rtl .datepicker-inline {
+	margin-left: auto;
+}
+
+.rtl .application-steps-cont {
+	justify-content: flex-end;
+}
+
+.rtl .application-steps-num {
+	order: 2;
+	margin-left: 30px;
+	margin-right: 0;
+}
+
+.rtl .services-list .sevices-desc {
+	margin-left: auto;
+}
+
+.rtl .list-sm {
+	direction: rtl;
+	padding-right: 18px;
+	padding-left: 0;
+}

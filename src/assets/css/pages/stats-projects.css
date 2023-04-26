@@ -1,0 +1,348 @@
+.inner-hero-banner{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 570px;
+	height: 100%;
+}
+
+.stats-project-list{
+	position: relative;
+	margin-top: -100px;
+}
+
+/* SECTION STAT PROJECT */
+.card-stats-project{
+	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12); 
+	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+	background-color: #8d6746;
+	position: relative;
+	padding: 30px;
+	min-height: 240px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	-webkit-transition: all 450ms ease-in-out;
+	-moz-transition: all 450ms ease-in-out;
+	-o-transition: all 450ms ease-in-out;
+	-ms-transition: all 450ms ease-in-out;
+	transition: all 450ms ease-in-out;
+}
+
+.card-stats-project:hover, .card-stats-project.active{
+	background-color: #5c805a;
+}
+
+.card-stats-project .card-stats-project-icon {
+	width: 63px;
+	height: 63px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-stats-project .card-stats-project-icon .icon{
+	font-size: 29px;
+}
+
+.card-stats-project .card-stats-project-title {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 0.34px;
+	color: #ffffff;
+}
+
+.section-project-top{
+	padding-top: 140px;
+	padding-bottom: 85px;
+	position: relative;
+}
+
+.project-type-nav a {
+	font-size: 14px;
+	color: #000000;
+	font-weight: 900;
+	margin-bottom: 45px;
+	display: block;
+}
+
+.project-type-nav a .icon {
+	color: #5c805a;
+	font-size: 16px;
+	display: block;
+	padding-bottom: 20px;
+}
+
+.project-type-nav a:hover {
+	opacity: 0.7;
+}
+
+/* REPORTS */
+
+.g-20 {
+	--bs-gutter-y: 2.50rem;
+	--bs-gutter-x: 2.50rem;
+}
+
+.section-project-reports {
+	padding: 100px 0 50px;
+}
+
+.card-project-reports {
+	position: relative;
+}
+
+.card-lg-project-reports {
+	max-width: 500px;
+	width: 100%;
+}
+
+.card-project-reports .card-project-reports-image {
+	margin-bottom: 30px;
+}
+
+.card-lg-project-reports .card-project-reports-image {
+	margin-bottom: 50px;
+}
+
+.card-project-reports .card-project-reports-image img {
+	width: 100%;
+}
+
+.card-lg-project-reports .card-project-reports-content p {
+	margin-bottom: 45px;
+	padding-right: 15px;
+}
+
+/* QUESTIONNAIRE */
+.section-questionnaire{
+	padding: 50px 0;
+}
+
+/* RADIO CSS */
+.form-check{
+	padding-left: 4.716em;
+	margin-bottom: 1.125rem;
+}
+
+.form-check .form-check-input{
+	width: 1.572em;
+	height: 1.572em;
+	margin-top: 0em;
+	margin-left: -4.716em;
+	border-color: rgba(0,0,0,0.25);
+}
+
+.form-check-input:checked[type=radio]{
+	background-image: none;
+	position: relative;
+}
+
+.form-check-input:checked[type=radio]:before{
+	content: "";
+	background-color: #000000;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	border-radius: 100%;
+}
+
+.form-check-input:checked[type=radio]:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.form-check-input:checked {
+	background-color: #ffffff;
+	border-color: rgba(0,0,0,.25);
+}
+
+.form-check-input:focus{
+	box-shadow: none;
+}
+
+
+/* TABS BLOCK CSS */
+.sh-tabs-accordion{}
+
+.sh-tabs-accordion .nav-tabs{
+	margin-bottom: 20px;
+	border-bottom: 0px;
+}
+
+.sh-tabs-accordion .nav-link {
+	color: #cdccc7;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 900;
+	border: 0px;
+	border-radius: 0;
+	padding: 10px 0px;
+}
+
+.sh-tabs-accordion .nav-tabs .nav-item.show .nav-link, 
+.sh-tabs-accordion .nav-tabs .nav-link.active{
+	color: #000000;
+	background-color: transparent;
+	border: 0px;
+}
+
+.sh-tabs-accordion .nav-link:hover {
+	color: #000000;
+}
+
+.accordion-item {
+	padding: 12px 0px;
+	border: 0px;
+	border-bottom: solid 1px #979797;
+	cursor: pointer;
+	font-weight: 900;
+	color: #000000;
+	display: flex;
+	align-items: center;
+}
+
+.accordion-item .icon{
+	padding-left: 15px;
+}
+
+.accordion-item .icon{
+	font-weight: normal;
+	font-size: 16px;
+	color: #5c805a;
+	transform: rotate(0deg);
+}
+
+.accordion-item.active .icon{
+	transform: rotate(90deg);
+	margin-right: -5px;
+}
+
+.accordion-body {
+	padding: 15px 0;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 1.5;
+	color: #707277;
+	display: none;
+}
+
+.accordion-body.collapse.active.show{
+	display: block;
+}
+
+.sh-tabs-accordion form.contact-light .form-control{
+	border-color: #979797; 
+}
+
+/* MEDIA CSS */
+@media screen and (min-width: 768px) {
+	.accordion-body.collapse {
+		display: block;
+		padding-bottom: 0px;
+	}
+	.accordion-item{
+		display: none;
+	}
+	.sh-tabs-accordion form.contact-light .name-input{
+		padding-left: 80px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.section-project-top {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.project-type-nav{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.project-type-nav a {
+		margin-bottom: 40px;
+	}
+	.g-20 {
+		--bs-gutter-x: 1.875rem;
+		--bs-gutter-y: 1.875rem;
+	}
+	.section-project-reports {
+		padding: 40px 0;
+	}
+	.section-questionnaire {
+		padding: 0px 0 50px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.project-img img{
+		width: 100%;
+	}
+	.card-lg-project-reports {
+		max-width: 50%;
+		margin: 0 auto 30px;
+	}
+	.sh-tabs-accordion .nav-tabs{
+		display: none;
+	}
+	.sh-tabs-accordion .tab-content{
+		margin-bottom: 15px;
+	}
+	.sh-tabs-accordion .tab-content>.tab-pane {
+		display: block;
+		border-bottom: solid 1px #979797;
+	}
+	.accordion-body{
+		padding: 25px 0 5px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.card-lg-project-reports {
+		max-width: 100%;
+	}
+
+	.card-lg-project-reports .card-project-reports-content p {
+		padding-right: 0;
+		margin-bottom: 15px;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.card-project-reports .card-project-reports-image {
+		margin-bottom: 20px;
+	}
+
+	.card-project-reports .card-project-reports-content h3.lead {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.card-project-reports .card-project-reports-content a.small {
+		font-size: 12px;
+	}
+}
+
+/* RTL */
+
+.rtl .form-check {
+	padding-left: 0;
+	padding-right: 4.716em;
+}
+
+.rtl .form-check .form-check-input {
+	float: right;
+}
+
+.rtl .form-check .form-check-input {
+	margin-right: -4.716em;
+	margin-left: auto
+}

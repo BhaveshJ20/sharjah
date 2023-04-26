@@ -1,0 +1,17 @@
+.inner-container {
+	padding-top: 235px;
+}
+
+/* MEDIa KIT */
+
+.section-media-kit {
+	padding-bottom: 40px;
+}
+
+
+/* MEDIA CSS */
+@media screen and (max-width: 991px) {
+	.inner-container {
+		padding-top: 40px;
+	}
+}

@@ -1,0 +1,121 @@
+.inner-container {
+	padding-top: 225px;
+}
+
+/* CAREER DETAIL */
+
+.section-job-detail {
+	padding-bottom: 140px;
+}
+
+.job-detail-content {
+	padding: 110px 0 90px;
+}
+
+.job-detail-content p:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.job-detail-specification{
+	margin-bottom: 80px;
+}
+
+.job-detail-specification ul {
+	margin-bottom: 80px;
+}
+
+.job-detail-specification ul li {
+	line-height: 34px;
+}
+
+.job-detail-share a {
+	display: inline-block;
+	margin-right: 20px;
+	color: #5c805a;
+	font-size: 18px;
+}
+
+.job-detail-share a:hover {
+	opacity: .7;
+}
+
+.section-career-apply {
+	padding: 100px 0 80px;
+}
+
+.custom-file {
+	position: relative;
+}
+
+.custom-file .icon {
+	font-size: 10px;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+.custom-file .custom-control {
+	position: absolute;
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.addtoany_shortcode{
+	display: inline-block;
+}
+
+.addtoany_list.a2a_kit_size_32 a {
+	font-size: 18px;
+}
+
+.job-detail-share a.simplefavorite-button.active {
+	color: #06C106;
+	opacity: 1;
+}
+
+.job-apply-btn{
+	text-align: right;
+}
+
+/* MEDIA CSS */
+
+@media screen and (max-width: 991px) {
+	.inner-container {
+		padding-top: 40px;
+	}	
+
+	.section-job-detail {
+		padding-bottom: 40px;
+	}
+
+	.job-detail-content,
+	.section-career-apply {
+		padding: 40px 0;
+	}
+
+	.job-detail-specification{
+		margin-bottom: 40px;
+	}
+
+	.job-detail-specification ul {
+		margin-bottom: 40px;
+	}
+
+	.job-apply-btn{
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.job-apply-btn{
+		text-align: center;
+	}
+}
+
+/* RTL */
+
+.rtl .job-apply-btn {
+	text-align: left;
+}

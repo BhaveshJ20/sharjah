@@ -1,0 +1,182 @@
+.mb-35{
+	margin-bottom: 35px;
+}
+
+.inner-container{
+	padding-top: 205px;
+}
+
+.about-strategy-wrap{
+	padding: 90px 0 0;
+}
+
+.sh-accordion .accordion-item{
+	border-left: 0;
+	border-right: 0;
+	border-radius: 0rem;
+	border-color: #979797;
+}
+
+.sh-accordion .accordion-item .accordion-button{
+	font-size: 18px;
+	border-radius: 0rem;
+	padding: 1.25rem 0rem;
+	position: relative;
+}
+
+.sh-accordion .accordion-item .accordion-button:focus{
+	box-shadow: none;
+}
+
+.sh-accordion .accordion-button:not(.collapsed){
+	background-color: transparent;
+	box-shadow: none;
+	padding-bottom: 0.75rem;
+}
+
+.sh-accordion .accordion-button::after {
+	background-image: none;
+	font-family: 'icomoon' !important;
+	content: "\e900";
+	font-weight: normal;
+	font-size: 16px;
+	color: #5c805a;
+	display: none;
+}
+
+.sh-accordion .accordion-button:not(.collapsed)::after {
+	transform: rotate(90deg);
+	display: none;
+}
+
+.sh-accordion .accordion-button .icon {
+	position: absolute;
+	top: 50%;
+	left: auto;
+  right: 5px;
+  margin-top: -9px;
+  color: #5c805a;
+}
+
+.sh-accordion .accordion-button:not(.collapsed) .icon{
+	transform: rotate(90deg);
+}
+
+.rtl .sh-accordion .accordion-button .icon {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+  right: auto;
+}
+
+.rtl .sh-accordion .accordion-button span{
+	display: inline-block;
+	text-align: right;
+	margin-left: auto;
+	padding-left: 25px;
+}
+
+.sh-accordion .accordion-body{
+	padding: 1.25rem 0rem;
+	color: #4a4a4a;
+}
+
+.sh-accordion .accordion-item .accordion-body{
+	padding-top: 0rem;
+}
+
+.about-strategy-bg{
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+	min-height: 285px;
+	width: 100%;
+}
+
+.section-our-policy{
+	padding: 100px 0 70px;
+}
+
+.sevices-box{
+	min-height: calc(100% - 30px);
+	margin-bottom: 30px;
+}
+
+.section-our-strategic-plan{
+	padding: 100px 0px;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: auto;
+}
+
+.media-kit-wrap{
+	margin: 0px;
+}
+
+.card-media-kit{
+	border: 2px solid #f3f3f1;
+}
+
+.card-media-kit:hover{
+	border-color: #e8c3a4;
+}
+
+.card-media-kit:hover .title-sm.text-secondary-50 {
+	color: #ffffff !important;
+}
+
+.card-media-kit a{
+	color: #e8c3a4;
+}
+
+.card-media-kit:hover a {
+	color: #5c805a;
+}
+
+.primary-light-link{
+	font-size: 14px;
+	line-height: 24px;
+	color: #e8c3a4;
+}
+
+.primary-light-link:hover{
+	color: #5c805a;
+}
+
+.primary-light-link i{
+	font-size: 12px;
+	display: inline-block;
+	vertical-align: middle;
+	height: 17px;
+}
+
+@media screen and (min-width: 992px) {
+	.about-quote{
+		margin-left: -32px;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.section-our-policy .g-xl-5, .section-our-policy .gx-xl-5 {
+		--bs-gutter-x: 6rem;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.inner-container{
+		padding-top: 35px;
+	}
+	.about-strategy-wrap{
+		padding: 40px 0 0;
+	}
+	.section-our-policy{
+		padding: 40px 0 20px;
+	}
+	.section-our-strategic-plan{
+		padding: 40px 0px;
+		background-image: none !important;
+	}
+	.section-related-doc{
+		padding-bottom: 30px;
+	}
+}

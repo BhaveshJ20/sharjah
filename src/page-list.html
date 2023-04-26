@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>State - All Pages List</title>
+  <meta name="title" content="Wonderland Sharjah">
+  <meta name="description" content="">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/images/fav/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/fav/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/images/fav/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/images/fav/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/images/fav/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/images/fav/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/images/fav/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/images/fav/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav/favicon-16x16.png">
+  <link rel="manifest" href="assets/images/fav/manifest.json">
+  <meta name="msapplication-TileColor" content="#8d6746">
+  <meta name="msapplication-TileImage" content="assets/images/fav/ms-icon-144x144.png">
+  <meta name="theme-color" content="#8d6746">
+  <!-- STYLE -->
+  <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/icons.css" />
+  <link rel="stylesheet" href="assets/css/common.css" />
+  <link rel="stylesheet" href="assets/css/pagelist.css" />
+  <style type="text/css">
+    .inner-container{
+      padding-top: 205px;
+    }
+    .table, thead, tbody, th, tr, td{
+      border: 1px solid #dee2e6;
+      vertical-align: middle;
+    }
+    .design-link {
+     display: inline-block;width: 50px;height: 50px;
+     position: relative;
+     border: 1px solid #dddddd;
+   }
+   .design-link img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  @media screen and (max-width: 992px) {
+    .inner-container{
+      padding-top: 35px;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header header-dark">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <button class="navbar-toggler d-flex" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav navbar-nav-menu me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistics.html">statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="community-development.html">community development</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tahdeeth.html">tahdeeth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="navbar-nav navbar-nav-lang ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">EN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">AR</a>
+          </li>
+        </ul>
+
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo-dark.svg" class="img-fluid d-none d-lg-block" alt="Stats" />
+          <img src="assets/images/logo-mobile.svg" class="img-fluid d-lg-none d-block" alt="Stats" />
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HEADER OVERLAY -->
+  <div class="header-overlay" id="mobileMenu">
+    <div class="header-overlay-wrap">
+      <span class="header-overlay-close">
+        <i class="icon icon-close text-dark"></i>
+      </span>
+
+      <div class="row">
+        <ul class="col-lg-6 list-unstyled header-level-one">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="statistics.html">Statistics</a>
+          </li>
+          <li>
+            <a href="community-development.html">Community Development</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="training.html">Training Center</a>
+          </li>
+        </ul>
+
+        <ul class="col-lg-6 list-unstyled header-level-one">
+          <li>
+            <a href="careers.html">Careers</a>
+          </li>
+          <li class="header-level-submenu">
+            <a href="media-center.html">Media Center 
+              <i class="icon icon-chev-lg-right d-lg-none"></i>
+            </a>
+
+            <ul class="list-unstyled header-level-two">
+              <li class="header-menu-back d-lg-none">
+                <a href="javascript:void(0);">
+                  <i class="icon icon-chev-lg-left"></i> back
+                </a>
+              </li>
+              <li>
+                <a href="news.html">News</a>
+              </li>
+              <li>
+                <a href="media-publication.html">Publications</a>
+              </li>
+              <li>
+                <a href="media-kit.html">Media Kit</a>
+              </li>
+              <li>
+                <a href="gallery.html">Gallery</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="row d-lg-flex d-none">
+        <div class="col-lg-6">
+          <div class="header-overlay-info">
+            <a href="mailto:info@dscd.ae">info@dscd.ae</a>
+            <a href="tel:97000000000">+97 000 000 000</a>
+          </div>
+
+          <div class="header-overlay-social">
+            <a href="#" target="_blank"><i class="icon icon-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-facebook"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-youtube"></i></a>
+            <a href="#" target="_blank"><i class="icon icon-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="header-overlay-subscription">
+            <h3 class="">Subscribe Now</h3>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email">
+              <button class="btn btn-secondary" type="button"><i class="icon icon-chev-lg-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT TOP SECTION  -->
+  <div class="inner-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section-title">
+            <small class="small text-lighter">Frontend</small>
+            <h1 class="title-md text-primary fw-bolder">Sharjah</h1>
+          </div>
+        </div>
+        <div class="col-lg-8 ps-xl-5">
+          <div class="title-desc mt-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
+          </div>
+        </div>
+      </div>
+      <div class="pt-5">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th>List of HTML Pages</th>
+                <th>Design Images</th>
+                <th>Mobile Design Images</th>
+                <th>PSD TO HTML</th>
+                <th>WP Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="index.html" target="_blank">Home</a></td>
+                <td>
+                  <a href="assets/images/design/home.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/home.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                
+                <td>
+                  <a href="assets/images/design/home-mobile.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/home-mobile.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="about.html" target="_blank">About</a></td>
+                <td>
+                  <a href="assets/images/design/about.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/about.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/about/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="contact.html" target="_blank">Contact</a></td>
+                <td>
+                  <a href="assets/images/design/contact.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/contact.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/contact-us/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="community-development.html" target="_blank">Community Development</a></td>
+                <td>
+                  <a href="assets/images/design/communitydevelopment.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/communitydevelopment.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/community-development/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="conceptual-framework.html" target="_blank">Conceptual Framework</a></td>
+                <td>
+                  <a href="assets/images/design/conceptualframework.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/conceptualframework.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/conceptual-framework/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="standardsof-living.html" target="_blank">Standards of Living</a></td>
+                <td>
+                  <a href="assets/images/design/standardliving.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/standardliving.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/standards-of-living/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="careers.html" target="_blank">Career</a></td>
+                <td>
+                  <a href="assets/images/design/careers.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/careers.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/job-openings/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="career-detail.html" target="_blank">Career Detail</a></td>
+                <td>
+                  <a href="assets/images/design/careerdetail.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/careerdetail.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/jobs/survived-not-only-five-centuries/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="faq.html" target="_blank">FAQ</a></td>
+                <td>
+                  <a href="assets/images/design/faq.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/faq.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/frequently-asked-questions/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="gallery.html" target="_blank">Gallery</a></td>
+                <td>
+                  <a href="assets/images/design/gallery.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/gallery.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/gallery/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="media-kit.html" target="_blank">Media Kit</a></td>
+                <td>
+                  <a href="assets/images/design/mediakit.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/mediakit.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/media-kit/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="media-center.html" target="_blank">Media Center</a></td>
+                <td>
+                  <a href="assets/images/design/mediacenter.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/mediacenter.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/media-center/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="media-publication.html" target="_blank">Publication</a></td>
+                <td>
+                  <a href="assets/images/design/mediapublications.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/mediapublications.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/our-publications/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="news.html" target="_blank">News</a></td>
+                <td>
+                  <a href="assets/images/design/news.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/news.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/latest-posts/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="services.html" target="_blank">Services</a></td>
+                <td>
+                  <a href="assets/images/design/services.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/services.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/our-services/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="services-detail.html" target="_blank">Services Detail</a></td>
+                <td>
+                  <a href="assets/images/design/servicedetail.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/servicedetail.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/services/statistical-consultancy/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="news-detail.html" target="_blank">News Detail</a></td>
+                <td>
+                  <a href="assets/images/design/newsarticle.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/newsarticle.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/there-are-many-variations-of-passages/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="stats-projects.html">Stats Project</a></td>
+                <td>
+                  <a href="assets/images/design/statsprojects.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/statsprojects.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="">Pending</a></td>
+              </tr>
+              <tr>
+                <td><a href="statistics.html">Stats Statitstics</a></td>
+                <td>
+                  <a href="assets/images/design/statsstatistics.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/statsstatistics.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/statistics/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="tahdeeth.html" target="_blank">Tahdeeth</a></td>
+                <td>
+                  <a href="assets/images/design/tahdeeth.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/tahdeeth.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/what-is-tahdeeth/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="training.html">Training</a></td>
+                <td>
+                  <a href="assets/images/design/training.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/training.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/training-center/">Link</a></td>
+              </tr>
+              <tr>
+                <td><a href="training-course.html">Training Course</a></td>
+                <td>
+                  <a href="assets/images/design/trainingcourse.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/trainingcourse.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+                <td class="text-danger">Design not provided</td>
+                <td class="text-success">Done</td>
+                <td align="center"><a target="_blank" href="https://sharjah.deployme.co.za/courses/specialized-statistical-training-course/">Link</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="pt-5">
+        <div class="section-title mb-5">
+          <h1 class="title-md fw-bolder text-secondary text-center">STYLE GUIDE PAGE</h1>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th>List of Style Guide</th>
+                <th>Design Images</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="index.html" target="_blank">Menu</a></td>
+                <td>
+                  <a href="assets/images/design/menu.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/menu.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="index.html" target="_blank">Menu Mobile</a></td>
+                <td>
+                  <a href="assets/images/design/menu-mobile.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/menu-mobile.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="index.html" target="_blank">Menu Mobile Step 2</a></td>
+                <td>
+                  <a href="assets/images/design/menu-mobile-step2.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/menu-mobile-step2.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="index.html" target="_blank">Popup</a></td>
+                <td>
+                  <a href="assets/images/design/download-popup.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/download-popup.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="index.html" target="_blank">Statistic</a></td>
+                <td>
+                  <a href="assets/images/design/artboard.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/artboard.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td><a href="index.html" target="_blank">Style Guide</a></td>
+                <td>
+                  <a href="assets/images/design/styleguide.jpg" class="design-link" target="_blank">
+                    <img src="assets/images/design/styleguide.jpg" class="img-fluid" style="">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- CTA SECTION -->
+    <div class="cta-bottom" style="background-image: url('assets/images/cta-bg.jpg');"></div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="subscription">
+              <h3 class="lead text-primary fw-bold mb-3">Subscribe Now</h3>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" aria-describedby="button-email">
+                <button class="btn btn-primary" type="button" id="button-email"><i class="icon icon-chev-lg-right"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-9 desktop-footerlinks d-md-block d-none">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="community-development.html">Community Development</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="training.html">Training Centre</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="news.html">News</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="media-publication.html">Publications</a></li>
+                        <li><a href="media-kit.html">Media Kit</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-9 mobile-footerlinks d-md-none d-block">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="statistics.html">Statistics</a></li>
+                        <li><a href="community-development.html">Community Development</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="training.html">Training Centre</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="foote-links">
+                      <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="media-publication.html">Publications</a></li>
+                        <li><a href="media-kit.html">Media Kit</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="contact-info">
+                  <div class="text-sm-start text-center mb-2"><a href="mailto:info@dscd.ae" class="text-secondary">info@dscd.ae</a></div>
+                  <div class="text-sm-start text-center mb-2"><a href="tel:+97000000000" class="text-dark">+97 000 000 000</a></div>
+                </div>
+                <div class="social-media text-sm-start text-center mt-4">
+                  <ul>
+                    <li><a href="#" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-youtube"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="icon icon-twitter"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-4 col-sm-5 order-sm-1 ms-auto">
+            <div class="bottom-link d-flex justify-content-lg-end justify-content-center">
+              <ul>
+                <li>
+                  <a href="faq.html" class="fst-normal">FAQ.</a>
+                </li>
+                <li>
+                  <a href="#" class="fst-normal">Terms of use.</a>
+                </li>
+                <li>
+                  <a href="#" class="fst-normal">Privacy.</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-7 order-sm-12">
+            <div class="copywright fst-normal d-flex justify-content-lg-start justify-content-center">
+              <span>Statistics Copyright 2019.</span> All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendors/jquery/jquery.min.js"></script>
+  <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendors/jquery.nicescroll-master/js/jquery.nicescroll.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>

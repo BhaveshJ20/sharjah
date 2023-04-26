@@ -1,0 +1,25 @@
+.inner-container{
+	padding-top: 235px;
+}
+.training-center-left-section,
+.training-center-right-section{
+	padding: 40px 0;
+}
+
+
+@media screen and (max-width: 991px) {
+	.inner-container{
+		padding-top: 35px;
+	}
+	.training-center-right-section{
+		padding: 0px 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	.training-center-left-section img,
+	.training-center-right-section img{
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}

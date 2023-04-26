@@ -1,0 +1,35 @@
+.inner-container {
+	padding-top: 205px;
+}
+
+.section-tehdeeth {
+	padding: 40px 0;
+}
+
+.sevices-box {
+	min-height: calc(100% - 30px);
+	margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 991px) {
+	.inner-container{
+		padding-top: 40px;
+	}
+
+	.section-tehdeeth {
+		padding: 40px 0;
+	}
+
+	.section-tehdeeth img {
+		margin: 0 auto 15px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.section-tehdeeth img {
+		width: 100%;
+		object-fit: cover;
+		object-position: center;
+		margin-bottom: 15px;
+	}
+}

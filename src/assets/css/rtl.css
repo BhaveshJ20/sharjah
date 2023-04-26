@@ -1,0 +1,74 @@
+.rtl {
+	text-align: right;
+}
+
+.rtl .text-start {
+	text-align: right !important;
+}
+
+.rtl .text-end {
+	text-align: left !important;
+}
+
+.rtl .form-control {
+	text-align: right;
+}
+
+.rtl .form-select {
+	background-position: left 0 center;
+}
+
+.rtl ul:not(.navbar-nav) {
+	direction: rtl;
+}
+
+
+@media (min-width: 576px) {
+	.rtl .text-sm-start {
+		text-align: right !important;
+	}
+
+	.rtl .text-sm-end {
+		text-align: left !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.rtl .text-md-start {
+		text-align: right !important;
+	}
+
+	.rtl .text-md-end {
+		text-align: left !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.rtl .text-lg-start {
+		text-align: right !important;
+	}
+
+	.rtl .text-lg-end {
+		text-align: left !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.rtl .text-xl-start {
+		text-align: right !important;
+	}
+
+	.rtl .text-xl-end {
+		text-align: left !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	.rtl .text-xxl-start {
+		text-align: right !important;
+	}
+
+	.rtl .text-xxl-end {
+		text-align: left !important;
+	}
+}

@@ -1,0 +1,133 @@
+.inner-container {
+  padding-top: 235px;
+}
+
+/* BLOG SECTION */
+
+.section-news {
+  padding-bottom: 40px;
+}
+
+.gallery-button {
+  margin-top: 50px;
+  margin-bottom: 55px;
+  font-size: 0;
+}
+
+.gallery-button .btn-gallery {
+  text-transform: capitalize;
+  min-width: inherit;
+  padding: 7px 18px;
+  font-size: 16px;
+  font-weight: 500;
+  height: 38px;
+  line-height: 38px;
+}
+
+.gallery-button .btn-gallery + .btn-gallery {
+  margin-left: 15px;
+}
+
+.gallery-button .btn-gallery.is-checked {
+  background-color: #e8c3a4;
+  color: #ffffff;
+}
+
+.gallery-list {
+  position: relative;
+  --bs-gutter-y: 2.50rem;
+  --bs-gutter-x: 2.50rem;
+  margin-bottom: 110px;
+}
+
+.gallery-list .gallery-link {
+  display: block;
+}
+
+.gallery-list .gallery-item {
+  position: relative;
+  height: 232px;
+  display: block;
+}
+
+.gallery-list .gallery-item img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.gallery-list .gallery-item .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  font-size: 42px;
+  z-index: 1;
+}
+
+.latest-post-card {
+  box-shadow: 0 1px 18px 0 rgba(0,0,0,.12);
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.latest-post-card-image {
+  height: 260px;
+  position: relative;
+}
+
+.latest-post-card-image img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.latest-post-card-content {
+  padding: 50px 25px;
+}
+
+.latest-post-card-content:hover a {
+  padding-left: 5px;
+}
+
+/*START MEDIA CSS*/
+
+@media screen and (max-width: 991px) {
+  .inner-container {
+    padding-top: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery-button {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 0;
+  }
+
+  .gallery-list {
+    position: relative;
+    --bs-gutter-y: 1.25rem;
+    --bs-gutter-x: 1.25rem;
+    margin-bottom: 40px;
+  }
+  
+  .latest-post-card {
+    box-shadow: none;
+    margin-top: 0;
+  }
+  
+  .latest-post-card-content {
+    padding: 25px 12px;
+  }
+}

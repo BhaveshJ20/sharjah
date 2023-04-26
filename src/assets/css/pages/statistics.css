@@ -1,0 +1,220 @@
+.inner-hero-banner{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 570px;
+	height: 100%;
+}
+
+.stats-project-list{
+	position: relative;
+	margin-top: -100px;
+}
+
+/* SECTION STAT PROJECT */
+.card-stats-project{
+	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12); 
+	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+	background-color: #8d6746;
+	position: relative;
+	padding: 30px;
+	min-height: 240px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	-webkit-transition: all 450ms ease-in-out;
+	-moz-transition: all 450ms ease-in-out;
+	-o-transition: all 450ms ease-in-out;
+	-ms-transition: all 450ms ease-in-out;
+	transition: all 450ms ease-in-out;
+}
+
+.card-stats-project:hover, .card-stats-project.active{
+	background-color: #5c805a;
+}
+
+.card-stats-project .card-stats-project-icon {
+	width: 63px;
+	height: 63px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-stats-project .card-stats-project-icon .icon{
+	font-size: 29px;
+}
+
+.card-stats-project .card-stats-project-title {
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 0.34px;
+	color: #ffffff;
+}
+
+
+/* SECTION SERVICES */
+
+.card-services {
+	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12); 
+	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+	background-color: #ffffff;
+	position: relative;
+	padding: 30px;
+	min-height: 220px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/*overflow: hidden;*/
+	transition: all 1.5s ease;
+}
+
+.card-services .card-services-icon {
+	width: 63px;
+	height: 63px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card-services .card-services-icon .icon{
+	font-size: 34px;
+}
+
+.card-services .card-services-title {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.3px;
+	color: #4a4a4a;
+	max-width: 155px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card-services .card-services-link {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 0px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #8d6746;
+	color: #ffffff;
+	font-size: 16px;
+	opacity: 0;
+	/*transform: translateY(50px);
+	transition: all 450ms ease-in-out;*/
+}
+
+.card-services:hover .card-services-link {
+	opacity: 1;
+	/*transform: translateY(0px);*/
+}
+
+.section-services{
+	padding-top: 140px;
+	padding-bottom: 85px;
+	position: relative;
+}
+
+.section-services-bottom{
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	min-height: 390px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+.section-services .g-4 {
+	--bs-gutter-y: 2.5rem;
+	--bs-gutter-x: 2.5rem;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.section-related-projects{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 100px 0 40px; 
+}
+
+.project-list{
+	max-width: 310px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.project-list .readmore{
+	color: #e8c3a4;
+}
+
+.project-list .readmore:hover .icon{
+	color: #ffffff;
+}
+
+/* MODAL FULLSCREEN CSS */
+.section-modalfullscreen .modal-content{
+	border: 0;
+	border-radius: 0rem;
+}
+.section-modalfullscreen .modal-header {
+	border-bottom: 0px;
+	max-width: 942px;
+	width: 100%;
+	margin: 0 auto;
+}
+.section-modalfullscreen .modal-header .btn-close {
+	background-image: none;
+	opacity: 1;
+	width: 1.25em;
+	height: 1.25em;
+}
+.section-modalfullscreen .modal-header .btn-close .icon {
+	font-size: 20px;
+}
+.section-modalfullscreen .modal-body{
+	max-width: 942px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* MEDIA CSS */
+@media screen and (max-width: 991px) {
+	.section-services {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		background-image: none;
+	}
+
+	.section-services .g-4 {
+		--bs-gutter-y: 1.5rem;
+		--bs-gutter-x: 1.5rem;
+		margin-top: 0;
+		margin-bottom: 0px;
+	}
+
+	.section-related-projects{
+		padding: 40px 0px 0px;
+	}
+
+	.project-list{
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.section-services-bottom{
+		background-image: none !important;
+	}
+}
